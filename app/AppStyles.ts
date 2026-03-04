@@ -1,41 +1,56 @@
 import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#F4F4F4",
-  },
-  content: {
+    flexGrow: 1,
     padding: 16,
+    backgroundColor: "#ffffff",
+  },
+  centerContainer: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#ffffff",
   },
   card: {
-    marginBottom: 20,
-    borderRadius: 18,
-    elevation: 4,
-    overflow: "hidden",
+    marginVertical: 8,
+    backgroundColor: "#2c2c2e",
+    borderRadius: 12,
   },
-  productImage: {
-    height: 180,
+  cardContent: {
+    flexDirection: "row",
+    alignItems: "center",
+    padding: 12,
   },
-  productName: {
-    marginTop: 8,
+  textContainer: {
+    marginLeft: 16,
+  },
+  nameText: {
+    color: "#ffffff",
+    fontSize: 16,
     fontWeight: "bold",
   },
-  description: {
-    marginTop: 4,
-    color: "#666",
+  emailText: {
+    color: "#a1a1aa",
+    fontSize: 14,
   },
-  price: {
-    marginTop: 8,
-    fontWeight: "bold",
-    color: "#6200ee",
+  profileAvatar: {
+    marginBottom: 16,
   },
-  button: {
-    marginTop: 12,
+  profileName: {
+    fontSize: 18,
+    fontWeight: "600",
+    marginBottom: 4,
   },
-  fab: {
-    position: "absolute",
-    right: 16,
-    bottom: 16,
+  profileEmail: {
+    fontSize: 16,
+    color: "#666666",
+    marginBottom: 24,
+  },
+  buttonContainer: {
+    marginVertical: 10,
+    width: "70%",
   },
 });
+
+export default styles;
